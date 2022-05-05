@@ -1,7 +1,8 @@
 import express from 'express'
-import { UserController } from "./controllers/user.controller"
+import { UserController } from "./controllers/user.controller.js"
 
 const app = express()
+app.use(express.json())
 
 const userController = new UserController()
 

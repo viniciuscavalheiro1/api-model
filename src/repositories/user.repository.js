@@ -17,8 +17,8 @@ class UserRepository {
       id,
     }
     this.users.push(userWithId)
-    return user
+    return userWithId
   }
 }
 
-export { UserRepository }
+export default new UserRepository
